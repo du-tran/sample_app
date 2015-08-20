@@ -7,6 +7,8 @@ gem 'rails', '4.2.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.9.0'
+  gem 'selenium-webdriver'
+  gem 'capybara', '1.1.2'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -48,3 +50,5 @@ end
 
 group :production do gem 'pg', '0.12.2'
 end
+
+gem 'test-unit'
