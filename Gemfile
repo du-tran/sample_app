@@ -9,6 +9,7 @@ group :development, :test do
   gem 'rspec-rails', '2.9.0'
   gem 'selenium-webdriver'
   gem 'capybara', '1.1.2'
+  gem 'guard-rspec', '0.5.5'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -52,3 +53,12 @@ group :production do gem 'pg', '0.12.2'
 end
 
 gem 'test-unit'
+
+group :test do
+  gem 'rb-fsevent', '0.9', :require => false
+  gem 'growl', '1.0.3'
+  gem 'guard-spork', '0.3.2'
+  #gem 'spork', '0.9.0'
+  gem 'spork', :github => 'sporkrb/spork'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+end
